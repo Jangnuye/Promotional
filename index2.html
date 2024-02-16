@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문석진 예비홍보물</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>서대문(을) 문석진 예비홍보물</h1>
+    </header>
+
+    <div class="image-container">
+      <img src="예비홍보물(2024-01-30)-2-1.jpg" alt="홍보물">
+      <img src="예비홍보물(2024-01-30)-2-2.jpg" alt="홍보물">
+      <img src="예비홍보물(2024-01-30)-2-3.jpg" alt="홍보물">
+      <img src="예비홍보물(2024-01-30)-2-4.jpg" alt="홍보물">
+      <img src="예비홍보물(2024-01-30)-2-5.jpg" alt="홍보물">
+      <img src="예비홍보물(2024-01-30)-2-6.jpg" alt="홍보물">
+      <img src="예비홍보물(2024-01-30)-2-7.jpg" alt="홍보물">
+      <img src="예비홍보물(2024-01-30)-2-8.jpg" alt="홍보물">
+        <!-- 여기에 홍보물 이미지를 넣으세요. 예시: <img src="your-promo-image.jpg" alt="홍보물"> -->
+    </div>
+
+    <div class="scroll-down">
+        <span>아래로 스크롤</span>
+        <div class="arrow"></div>
+    </div>
+</div>
+<script>
+  window.addEventListener('scroll', function() {
+  var scrollDown = document.querySelector('.scroll-down'); // '아래로 스크롤' 요소 선택
+  var windowHeight = window.innerHeight; // 브라우저 창의 높이
+  var fullHeight = document.body.scrollHeight; // 전체 페이지의 높이
+  var scrollPosition = window.scrollY || document.documentElement.scrollTop; // 현재 스크롤 위치
+
+  // 만약 사용자가 페이지의 마지막 부분에 도달했다면, '아래로 스크롤' 표시 숨기기
+  if(windowHeight + scrollPosition >= fullHeight) {
+    scrollDown.style.display = 'none';
+  } else {
+    scrollDown.style.display = 'block';
+  }
+});
+</script>
+</body>
+</html>
